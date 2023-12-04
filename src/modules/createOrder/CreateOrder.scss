@@ -1,0 +1,129 @@
+.createorder {
+    background: white;
+    width: 70%;
+}
+
+.createorder__container {
+    padding: 25px 50px;
+}
+
+.createorder__form {
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 30px 50px;
+    height: 100%;
+}
+
+.createorder__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.createorder__title {
+    align-self: center;
+    color: black;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.createorder__departure-title {
+    color: black;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.createorder__departure-input {
+    border: 2px solid orange;
+    font-size: 20px;
+    width: 100%;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.createorder__destination-title {
+    color: black;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.createorder__destination-input {
+    border: 2px solid orange;
+    font-size: 20px;
+    width: 100%;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.createorder__cost-title {
+    color: black;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.createorder__cost-input {
+    border: 2px solid orange;
+    font-size: 20px;
+    width: 100%;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.createorder__description-title {
+    color: black;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.createorder__description-input {
+    border: 2px solid orange;
+    font-size: 20px;
+    width: 100%;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 30px;
+}
+
+.createorder__button {
+    padding: 10px 0px;
+    align-self: center;
+    width: 30%;
+    border-radius: 20px;
+    background: orange;
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.createorder__button:hover {
+    text-decoration: underline;
+}
