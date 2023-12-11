@@ -11,7 +11,6 @@ function Registration() {
     const [password, setPassword] = useState('')
     const [passwordConfirm, setPasswordConfirm] = useState('')
     const [role, setRole] = useState('passenger')
-    console.log(role)
 
     const validEmail = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
     const lowerCaseLetters = /[a-z]/g;

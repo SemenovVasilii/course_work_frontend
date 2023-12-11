@@ -11,9 +11,21 @@ function CreateOrder() {
     const [cost, setCost] = useState('')
     const [description, setDescription] = useState('')
 
+    const lowerCaseLetters = /[a-z]/g;
+    const upperCaseLetters = /[A-Z]/g;
+
     const Create = () => {
-        createDrive(passenger_id, cost, departure, destination, description)
-            .then(setDeparture(''), setDestination(''), setCost(''), setDescription(''))
+        if (departure && destination && cost && description) {
+            if (lowerCaseLetters.test(cost) || upperCaseLetters.test(cost)) {
+                alert('Формат цены: 2000')
+            } else {
+                createDrive(passenger_id, cost, departure, destination, description)
+                    .then(setDeparture(''), setDestination(''), setCost(''), setDescription(''))
+            }
+        } else {
+            alert('Заполните все поля!')
+        }
+
     }
 
     return (
@@ -22,28 +34,28 @@ function CreateOrder() {
                 <div className="createorder__form">
                     <div className="createorder__column">
                         <div className="createorder__title">Форма создания заказа</div>
-                        <div className="createorder__departure-title">Место отправления</div>
+                        <div className="createorder__departure-title">Где вас забрать?</div>
                         <input
                             type="text"
                             className="createorder__departure-input"
                             value={departure}
                             onChange={(e) => setDeparture(e.target.value)}
                         />
-                        <div className="createorder__destination-title">Место прибытия</div>
+                        <div className="createorder__destination-title">Куда хотите приехать?</div>
                         <input
                             type="text"
                             className="createorder__destination-input"
                             value={destination}
                             onChange={(e) => setDestination(e.target.value)}
                         />
-                        <div className="createorder__cost-title">Цена</div>
+                        <div className="createorder__cost-title">Укажите цену в рублях</div>
                         <input
                             type="text"
                             className="createorder__cost-input"
                             value={cost}
                             onChange={(e) => setCost(e.target.value)}
                         />
-                        <div className="createorder__description-title">Описание</div>
+                        <div className="createorder__description-title">Добавьте описание</div>
                         <input
                             type="text"
                             className="createorder__description-input"

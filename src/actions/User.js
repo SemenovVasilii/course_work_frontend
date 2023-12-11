@@ -1,8 +1,7 @@
 import axios from "axios";
 import { store } from "../store";
 import { SetAuth } from "../store/userReducer";
-import { SetUser } from "../store/userReducer";
-import { useDispatch } from 'react-redux'
+import { SetCurrentUser } from "../store/userReducer";
 
 export const registartion = async (name, surname, email, password, role) => {
     try {
@@ -28,21 +27,20 @@ export const login = async (email, password) => {
         })
         const token = response.data.token
         store.dispatch(SetAuth(token))
-        getUser(token)
+        getCurrentUser(token)
     } catch (e) {
         console.log(e)
         alert(e.response.data.message)
     }
 }
 
-export const getUser = async (token) => {
+export const getCurrentUser = async (token) => {
     try {
-        const response = await axios.get(`http://localhost:8080/users/getUser`, {
+        const response = await axios.get(`http://localhost:8080/users/getCurrentUser`, {
             headers: { Authorization: `Bearer ${token}` }
         })
         const user = response.data
-        console.log(user)
-        store.dispatch(SetUser(user))
+        store.dispatch(SetCurrentUser(user))
     } catch (e) {
         console.log(e)
     }

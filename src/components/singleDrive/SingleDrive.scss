@@ -1,0 +1,128 @@
+.singledrive {
+    border: 2px solid orange;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.sd__container {
+    padding: 10px;
+}
+
+.sd__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.sd__passenger {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__passenger-props {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__cost {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__cost-props {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__departure {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__departure-props {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__destination {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__destination-props {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__description {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__descripiton-props {
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.sd__accept {
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(271deg, rgb(248, 150, 2) 0%, rgb(241, 158, 4)100%);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1,10 +1,10 @@
 const SET_AUTH = "SET_AUTH"
-const SET_USER = "SET_USER"
+const SET_CURRENT_USER = "SET_CURRENT_USER"
 
 const defaultState = {
     currentUser: {},
     token: '',
-    isAuth: false
+    isAuth: false,
 }
 
 export const userReducer = (state = defaultState, action) => {
@@ -15,7 +15,7 @@ export const userReducer = (state = defaultState, action) => {
                 isAuth: true,
                 token: action.payload
             }
-        case SET_USER:
+        case SET_CURRENT_USER:
             return {
                 ...state,
                 currentUser: action.payload
@@ -26,4 +26,4 @@ export const userReducer = (state = defaultState, action) => {
 }
 
 export const SetAuth = data => ({ type: SET_AUTH, payload: data })
-export const SetUser = data => ({ type: SET_USER, payload: data })
+export const SetCurrentUser = data => ({ type: SET_CURRENT_USER, payload: data })

@@ -1,0 +1,20 @@
+.driveslist {
+    padding: 0px 30px;
+    width: 70%;
+}
+
+.dl__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dl__title {
+    color: black;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
