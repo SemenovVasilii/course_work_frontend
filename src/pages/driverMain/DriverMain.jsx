@@ -1,34 +1,41 @@
 import "./DriverMain.scss"
 import { DrivesList } from "../../modules/drivesList/DrivesList"
-import { useSelector } from "react-redux/es/hooks/useSelector"
+import { useSelector } from "react-redux"
 import { driverCurrentDrive } from "../../actions/Drive"
 import { useEffect } from "react"
 import { DriverDrive } from "../../modules/driverDrive/DriverDrive"
+import { Footer } from "../../modules/footer/Footer"
+import { Header } from "../../modules/header/Header"
+import { Extra } from "../../modules/extra/Extra"
 
 
 function DriverMain() {
 
-    const user = useSelector(state => state.user.currentUser)
+    const driver_id = useSelector(state => state.user.currentUser.id)
+    const currentDrive = useSelector(state => state.drive.driverCurrentDrive)
 
     useEffect(() => {
-        const driver_id = user.id
         driverCurrentDrive(driver_id)
-    }, [user])
+    }, [currentDrive.status, driver_id])
 
-    const currentDrive = useSelector(state => state.drive.driverCurrentDrive)
+
 
     return (
         <>
+            <Header />
             {
-                (currentDrive && currentDrive.status === "active") ?
+                (currentDrive.status === "активен") ?
                     <div className="drivermain">
                         <DriverDrive />
+                        <Extra />
                     </div>
                     :
                     <div className="drivermain">
                         <DrivesList />
+                        <Extra />
                     </div>
             }
+            <Footer />
         </>
     )
 }

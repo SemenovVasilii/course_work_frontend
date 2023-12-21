@@ -1,0 +1,190 @@
+.passengerdrive {
+    width: 60%;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid black;
+}
+
+.pd__row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pd__form {
+    width: 70%;
+}
+
+.pd__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.pd__title {
+    align-self: center;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__main {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.60);
+    border: 2px solid orange;
+    padding: 50px;
+}
+
+.pd__passenger {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__passenger-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__status {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__status-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__cost {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__cost-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__departure {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__departure-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__destination {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__destination-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__description {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.pd__description-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pd__button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pd__cancel {
+    margin-right: 30px;
+    padding: 10px 0px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.pd__complete {
+    padding: 10px 0px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}

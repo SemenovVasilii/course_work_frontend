@@ -1,7 +1,13 @@
 .login {
     background: url(../../ui/img/regandlogback.jpg) 100% 100%;
     height: 100vh;
-    padding-top: 20vh;
+}
+
+.login__row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .login_form {
@@ -17,10 +23,10 @@
 
 .login_enter {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 40px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 10px;
 }
@@ -28,12 +34,11 @@
 .login_email {
     align-self: flex-start;
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .login_email-input {
@@ -48,12 +53,11 @@
 .login_password {
     align-self: flex-start;
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .login_password-input {
@@ -66,12 +70,13 @@
 }
 
 .login_button {
+    margin-top: 20px;
     width: 50%;
     padding: 10px 0;
     border-radius: 50px;
     background: linear-gradient(271deg, rgb(248, 150, 2) 0%, rgb(241, 158, 4)100%);
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -81,7 +86,7 @@
 
 .toreg {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -90,7 +95,7 @@
 
 .toreg_button {
     color: orange;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;

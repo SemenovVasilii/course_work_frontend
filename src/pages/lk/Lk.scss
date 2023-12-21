@@ -1,0 +1,204 @@
+.lk__driver {
+    height: 83vh;
+}
+
+.driver__container {}
+
+.driver__column {
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.driver__main {
+    width: 50%;
+}
+
+.driver__main-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.driver__title {
+    align-self: center;
+    font-family: 'Roboto';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10vh;
+}
+
+.driver__name {
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+.driver__name-title {
+    align-self: center;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.driver__main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.driver__name-container {
+    width: 75%;
+}
+
+.driver__name-input {
+    font-size: 20px;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 10px;
+    margin-right: 200px;
+}
+
+
+.driver__name-change {
+    width: 20%;
+    padding: 10px 0px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.driver__name-change:focus {
+    background-color: green;
+}
+
+.driver__surname {
+    margin-bottom: 2vh;
+}
+
+.driver__surname-title {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.driver__surname-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.driver__surname-container {
+    width: 75%;
+}
+
+.driver__surname-input {
+    font-size: 20px;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 10px;
+}
+
+.driver__surname-change {
+    padding: 10px 0px;
+    width: 20%;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.driver__surname-change:focus {
+    background-color: green;
+}
+
+.driver__password {}
+
+.driver__password-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.driver__pass {
+    width: 35%;
+}
+
+.driver__password-title {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.driver__password-input {
+    font-size: 20px;
+    width: 35%;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 10px;
+}
+
+.driver__confpass {
+    width: 35%;
+}
+
+.driver__confirmpassword-title {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.driver__confirmpassword-input {
+    font-size: 20px;
+    padding: 24px 40px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-bottom: 10px;
+}
+
+.driver__password-change {
+    width: 20%;
+    align-self: flex-end;
+    padding: 10px 0px;
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.driver__password-change:focus {
+    background-color: green;
+}

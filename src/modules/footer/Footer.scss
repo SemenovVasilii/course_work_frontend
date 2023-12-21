@@ -1,0 +1,85 @@
+.footer {
+    height: 17vh;
+    background: black;
+}
+
+.footer__row {
+    height: 17vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__slogan {
+    color: white;
+    font-family: 'Inter' sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer__logo {}
+
+.footer__logo-img {
+    width: 153.3px;
+    height: 133.3px;
+}
+
+.footer__links {}
+
+.footer__links-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer__links-title {
+    color: white;
+    font-family: 'Inter' sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 5px;
+}
+
+.footer__links-email {
+    color: white;
+    font-family: 'Inter' sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-right: 20px;
+}
+
+.footer__links-email:hover {
+    text-decoration: none;
+}
+
+.footer__links-tg {
+    margin-right: 20px;
+}
+
+.footer__links-tg:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.footer__links-tg:active {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.footer__vk-img {}
+
+.footer__vk-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.footer__links-vk:active {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}

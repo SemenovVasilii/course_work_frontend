@@ -1,17 +1,19 @@
 .createorder {
     background: white;
-    width: 70%;
+    width: 60%;
+    height: 100vh;
+    border-right: 1px solid black;
 }
 
-.createorder__container {
-    padding: 25px 50px;
+.createorder__row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .createorder__form {
-    border: 2px solid orange;
-    border-radius: 20px;
-    padding: 30px 50px;
-    height: 100%;
+    width: 70%;
 }
 
 .createorder__column {
@@ -22,7 +24,7 @@
 .createorder__title {
     align-self: center;
     color: black;
-    font-family: Roboto;
+    font-family: 'Inter' sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -30,100 +32,106 @@
     margin-bottom: 10px;
 }
 
+.createorder__main {
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.60);
+}
+
 .createorder__departure-title {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .createorder__departure-input {
     border: 2px solid orange;
     font-size: 20px;
+    font-family: 'Inter' sans-serif;
     width: 100%;
     padding: 24px 40px;
     border-radius: 10px;
     background: #FFF;
-    margin-bottom: 20px;
 }
 
 .createorder__destination-title {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .createorder__destination-input {
     border: 2px solid orange;
+    font-family: 'Inter' sans-serif;
     font-size: 20px;
     width: 100%;
     padding: 24px 40px;
     border-radius: 10px;
     background: #FFF;
-    margin-bottom: 20px;
 }
 
 .createorder__cost-title {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .createorder__cost-input {
     border: 2px solid orange;
+    font-family: 'Inter' sans-serif;
     font-size: 20px;
     width: 100%;
     padding: 24px 40px;
     border-radius: 10px;
     background: #FFF;
-    margin-bottom: 20px;
 }
 
 .createorder__description-title {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .createorder__description-input {
     border: 2px solid orange;
+    font-family: 'Inter' sans-serif;
     font-size: 20px;
     width: 100%;
     padding: 24px 40px;
     border-radius: 10px;
     background: #FFF;
-    margin-bottom: 30px;
 }
 
 .createorder__button {
-    padding: 10px 0px;
-    align-self: center;
+    margin-top: 30px;
     width: 30%;
+    text-align: center;
+    padding: 10px 0px;
     border-radius: 20px;
     background: orange;
     color: white;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
-.createorder__button:hover {
-    text-decoration: underline;
+.createorder__button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

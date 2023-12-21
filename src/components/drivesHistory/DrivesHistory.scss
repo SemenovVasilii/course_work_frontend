@@ -1,0 +1,67 @@
+.driveshistory {}
+
+.dh__column {
+    height: 48vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dh__title {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.dh__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dh__arrowleft-static {
+    position: absolute;
+    background: white;
+    transform: rotate(180deg);
+}
+
+.dh__arrowleft-static:hover {
+    opacity: 0;
+}
+
+.dh__arrowleft-active {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.dh__arrowleft-active:hover {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+.dh__arrowright-static {
+    position: absolute;
+    background: white;
+    margin-right: 15px;
+}
+
+.dh__arrowright-static:hover {
+    opacity: 0;
+}
+
+.dh__none {
+    margin-top: 30px;
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { store } from "../store";
-import { SetDriverCurrentDrive, SetDrives } from '../store/driveReducer'
-import { SetPassengerCurrentDrive } from '../store/driveReducer'
+import { SetDriverCurrentDrive, SetDrives, SetPassengerCurrentDrive, SetClosedDrives } from '../store/driveReducer'
 
 export const createDrive = async (passenger_id, cost, departure, destination, description) => {
     try {
@@ -29,24 +28,42 @@ export const getDrives = async () => {
     }
 }
 
-export const updateDriveStatus = async (id, status) => {
+export const updateDriverDriveStatus = async (id, status, driver_id, passenger_id) => {
     try {
-        const response = await axios.put(`http://localhost:8080/drives/updateDriveStatus`, {
+        const response = await axios.put(`http://localhost:8080/drives/updateDriverDriveStatus`, {
             id: id,
             status: status
         })
+        driverCurrentDrive(driver_id)
+        passengerCurrentDrive(passenger_id)
+        getDriverClosedDrives(driver_id)
     } catch (e) {
         console.log(e)
     }
 }
 
-export const addDriverId = async (id, driver_id, passenger_id) => {
+export const updatePassengerDriveStatus = async (id, status, passenger_id, driver_id) => {
+    try {
+        const response = await axios.put(`http://localhost:8080/drives/updatePassengerDriveStatus`, {
+            id: id,
+            status: status
+        })
+        passengerCurrentDrive(passenger_id)
+        driverCurrentDrive(driver_id)
+        getPassengerClosedDrives(passenger_id)
+    } catch (e) {
+        console.log(e)
+    }
+}
+
+
+
+export const addDriverId = async (id, driver_id) => {
     try {
         const response = await axios.put(`http://localhost:8080/drives/addDriverId`, {
             id: id,
             driver_id: driver_id
         })
-        driverCurrentDrive(driver_id)
     } catch (e) {
         console.log(e)
     }
@@ -73,3 +90,26 @@ export const driverCurrentDrive = async (driver_id) => {
         console.log(e)
     }
 }
+
+export const getDriverClosedDrives = async (driver_id) => {
+    try {
+        const response = await axios.get(`http://localhost:8080/drives/getDriverClosedDrives`, {
+            headers: { driver_id: driver_id }
+        })
+        store.dispatch(SetClosedDrives(response.data))
+    } catch (e) {
+        console.log(e)
+    }
+}
+
+export const getPassengerClosedDrives = async (passenger_id) => {
+    try {
+        const response = await axios.get(`http://localhost:8080/drives/getPassengerClosedDrives`, {
+            headers: { passenger_id: passenger_id }
+        })
+        store.dispatch(SetClosedDrives(response.data))
+    } catch (e) {
+        console.log(e)
+    }
+}
+

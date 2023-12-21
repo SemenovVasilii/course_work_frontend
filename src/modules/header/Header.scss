@@ -1,0 +1,64 @@
+.header {
+    height: 17vh;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+.header__row {
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__logo {}
+
+.header__slogan {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__menu {}
+
+.header__menu-home {}
+
+
+.header__menu-static {
+    position: absolute;
+    background: white;
+}
+
+.header__menu-static:hover {
+    opacity: 0;
+}
+
+
+
+.header__menu-row {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-home {
+    background-color: white;
+    margin-right: 5vh;
+}
+
+.header__menu-home:focus {
+    background-color: white;
+}
+
+.header__menu-lk {
+    background-color: white;
+    margin-right: 5vh;
+}
+
+.header__lk-img {}
+
+.header__menu-exit {
+    background-color: white;
+}

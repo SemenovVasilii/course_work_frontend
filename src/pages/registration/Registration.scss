@@ -1,7 +1,13 @@
 .registration {
     background: url(../../ui/img/regandlogback.jpg) 100% 100%;
     height: 100vh;
-    padding-top: 2.5vh;
+}
+
+.reg__column {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .reg_form {
@@ -17,10 +23,10 @@
 
 .reg_reg {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 40px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 10px;
 }
@@ -28,12 +34,11 @@
 .reg_name {
     align-self: flex-start;
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .reg_name-input {
@@ -48,12 +53,11 @@
 .reg_surname {
     align-self: flex-start;
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .reg_surname-input {
@@ -68,12 +72,11 @@
 .reg_email {
     align-self: flex-start;
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .reg_email-input {
@@ -91,10 +94,10 @@
 
 .reg_role-title {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     margin-bottom: 10px;
 }
@@ -124,6 +127,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+    margin-bottom: 5px;
 }
 
 .reg_role-input:checked+label::before {
@@ -134,10 +138,10 @@
 
 .reg_role-text {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -155,12 +159,11 @@
 
 .reg_password {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .reg_password-input {
@@ -178,12 +181,11 @@
 
 .reg_confirmpassword {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
 .reg_confirmpassword-input {
@@ -197,7 +199,7 @@
 
 .tologin {
     color: black;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 30px;
     font-style: normal;
     font-weight: 600;

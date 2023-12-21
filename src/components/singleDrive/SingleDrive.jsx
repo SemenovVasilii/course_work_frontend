@@ -1,14 +1,20 @@
 import './SingleDrive.scss'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { updateDriveStatus } from '../../actions/Drive'
+import { updateDriverDriveStatus } from '../../actions/Drive'
 import { addDriverId } from '../../actions/Drive'
 import { useSelector } from 'react-redux'
+import { driverCurrentDrive } from "../../actions/Drive"
 
 function SingleDrive({ id, passenger_id, cost, departure, destination, description, status }) {
 
     const [passenger, setPassenger] = useState({})
     const driver_id = useSelector(state => state.user.currentUser.id)
+
+    const updateStatus = (id, status, driver_id) => {
+        addDriverId(id, driver_id)
+        updateDriverDriveStatus(id, status, driver_id)
+    }
 
     useEffect(() => {
         const getUser = async (id) => {
@@ -21,16 +27,7 @@ function SingleDrive({ id, passenger_id, cost, departure, destination, descripti
             }
         }
         getUser(passenger_id)
-    }, [passenger_id])
-
-    const updateStatus = (id, status) => {
-        try {
-            updateDriveStatus(id, status)
-            addDriverId(id, driver_id, passenger_id)
-        } catch (e) {
-            console.log(e)
-        }
-    }
+    }, [])
 
     return (
         <div className='singledrive'>
@@ -40,8 +37,8 @@ function SingleDrive({ id, passenger_id, cost, departure, destination, descripti
                     <div className="sd__cost">Цена: <span className='sd__cost-props'>{cost} рублей</span></div>
                     <div className="sd__departure">Откуда: <span className="sd__departure-props">{departure}</span> </div>
                     <div className="sd__destination">Куда: <span className="sd__destination-props">{destination}</span> </div>
-                    <div className="sd__description">Описание: <span className="sd__descripiton-props">{description}</span> </div>
-                    <button className="sd__accept" onClick={() => updateStatus(id, "active")}>Принять заказ</button>
+                    <div className="sd__description">Описание: <span className="sd__description-props">{description}</span> </div>
+                    <button className="sd__accept" onClick={() => updateStatus(id, "активен", driver_id)}>Принять заказ</button>
                 </div>
             </div>
         </div>

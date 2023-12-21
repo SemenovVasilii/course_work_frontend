@@ -1,11 +1,13 @@
 const SET_DRIVES = "SET_DRIVES"
 const SET_PASSENGER_CURRENT_DRIVE = "SET_PASSENGER_CURRENT_DRIVE"
 const SET_DRIVER_CURRENT_DRIVE = "SET_DRIVER_CURRENT_DRIVE"
+const SET_CLOSED_DRIVES = "SET_CLOSED_DRIVES"
 
 const defaultState = {
     drives: [],
     passengerCurrentDrive: {},
-    driverCurrentDrive: {}
+    driverCurrentDrive: {},
+    closedDrives: []
 }
 
 export const driveReducer = (state = defaultState, action) => {
@@ -25,6 +27,11 @@ export const driveReducer = (state = defaultState, action) => {
                 ...state,
                 driverCurrentDrive: action.payload
             }
+        case SET_CLOSED_DRIVES:
+            return {
+                ...state,
+                closedDrives: action.payload
+            }
         default:
             return state
     }
@@ -33,3 +40,4 @@ export const driveReducer = (state = defaultState, action) => {
 export const SetDrives = data => ({ type: SET_DRIVES, payload: data })
 export const SetPassengerCurrentDrive = data => ({ type: SET_PASSENGER_CURRENT_DRIVE, payload: data })
 export const SetDriverCurrentDrive = data => ({ type: SET_DRIVER_CURRENT_DRIVE, payload: data })
+export const SetClosedDrives = data => ({ type: SET_CLOSED_DRIVES, payload: data })

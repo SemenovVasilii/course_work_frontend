@@ -1,21 +1,22 @@
-.singledrive {
-    border: 2px solid orange;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.60);
-    margin-bottom: 5px;
+.closedrive {
     width: 65%;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
-.sd__container {
-    padding: 10px;
+.cd__container {
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.sd__column {
+.cd__column {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-.sd__passenger {
+.cd__passenger {
     color: black;
     font-family: 'Roboto';
     font-size: 25px;
@@ -25,17 +26,16 @@
     margin-bottom: 10px;
 }
 
-.sd__passenger-props {
+.cd__passenger-props {
     color: black;
     font-family: 'Inter' sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
-.sd__cost {
+.cd__driver {
     color: black;
     font-family: 'Roboto';
     font-size: 25px;
@@ -45,17 +45,16 @@
     margin-bottom: 10px;
 }
 
-.sd__cost-props {
+.cd__driver-props {
     color: black;
     font-family: 'Inter' sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
-.sd__departure {
+.cd__status {
     color: black;
     font-family: 'Roboto';
     font-size: 25px;
@@ -65,17 +64,16 @@
     margin-bottom: 10px;
 }
 
-.sd__departure-props {
+.cd__status-props {
     color: black;
     font-family: 'Inter' sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
-.sd__destination {
+.cd__cost {
     color: black;
     font-family: 'Roboto';
     font-size: 25px;
@@ -85,17 +83,16 @@
     margin-bottom: 10px;
 }
 
-.sd__destination-props {
+.cd__cost-props {
     color: black;
     font-family: 'Inter' sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 10px;
 }
 
-.sd__description {
+.cd__departure {
     color: black;
     font-family: 'Roboto';
     font-size: 25px;
@@ -105,25 +102,48 @@
     margin-bottom: 10px;
 }
 
-.sd__description-props {
+.cd__departure-props {
     color: black;
     font-family: 'Inter' sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.cd__destination {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     margin-bottom: 10px;
 }
 
-.sd__accept {
-    align-self: center;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: linear-gradient(271deg, rgb(248, 150, 2) 0%, rgb(241, 158, 4)100%);
-    color: #FFF;
-    font-family: 'Roboto';
-    font-size: 24px;
+.cd__destination-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cd__description {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cd__description-props {
+    color: black;
+    font-family: 'Inter' sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }

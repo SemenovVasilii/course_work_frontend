@@ -42,10 +42,22 @@ function DrivesList() {
     }
     return (
         <div className='driveslist'>
-            <div className="dl__column">
-                <div className="dl__title">Доступные заказы</div>
-                {currentDrives.map((e) => (<SingleDrive key={e.id} {...e} />))}
-                <DrivesListPagination drivesPerPage={drivesPerPage} totalDrives={drives.length} paginate={paginate} />
+            <div className="dl__row">
+                <div className="dl__list">
+                    <div className="dl__column">
+                        <div className="dl__title">Доступные заказы</div>
+                        {!(drives.length === 0) ?
+                            <>
+                                {currentDrives.map((e) => (<SingleDrive key={e.id} {...e} />))}
+                                < DrivesListPagination drivesPerPage={drivesPerPage} totalDrives={drives.length} paginate={paginate} />
+                            </>
+                            :
+                            <>
+                                <div className="dl__none">Сейчас заказов нет!</div>
+                            </>
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )

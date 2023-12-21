@@ -9,17 +9,17 @@ function DrivesListPagination({ drivesPerPage, totalDrives, paginate }) {
     }
 
     return (
-        <ul className='drivelistpagination'>
+        <div className='drivelistpagination'>
             {
                 pageNumbers.map(number => (
-                    <li className="dlp__item" key={number}>
-                        <button className="dlp__link" onClick={() => paginate(number)}>
+                    <div className="dlp__number" key={number}>
+                        <button className="dlp__number-button" onClick={() => paginate(number)}>
                             {number}
                         </button>
-                    </li>
+                    </div>
                 ))
             }
-        </ul>
+        </div>
     )
 }
 
